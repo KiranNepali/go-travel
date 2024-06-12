@@ -158,8 +158,8 @@ function Navbar({ }: Props) {
               (item, index) => (
                 <div
                   key={index}
-                  onMouseEnter={() => handleHoverNav(index)}
-                  onMouseLeave={() => handleLeaveNav(index)}
+                  // onMouseEnter={() => handleHoverNav(index)}
+                  // onMouseLeave={() => handleLeaveNav(index)}
                   className="ml-[-30px] mt-[30px] nav-links opacity-0 flex justify-center items-center h-[36px] overflow-hidden"
                 >
                   <div
