@@ -222,9 +222,9 @@ const Affiliations = () => {
   );
 
   return (
-    <div  ref={affRef} id="affiliations" className="py-[5rem] w-full bg-black ">
+    <div  ref={affRef} id="affiliations" className="py-[5rem] w-full bg-zinc-950 ">
       {/* title  */}
-      <span className="w-11/12 flex md:justify-center justify-start mx-auto text-zinc-50  text-2xl md:text-5xl uppercase font-semibold tracking-wider">
+      <span className="w-11/12 flex md:justify-center justify-start mx-auto text-zinc-50  text-2xl md:text-5xl uppercase font-semibold ">
         Affiliation Partners
       </span>
 

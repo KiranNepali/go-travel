@@ -22,14 +22,14 @@ type Props = {};
 function Upcoming({}: Props) {
   return (
     <>
-      <div className="w-full text-zinc-50 h-full bg-black">
+      <div className="w-full text-zinc-50 h-full bg-zinc-950">
         <div className="w-11/12   mx-auto overflow-hidden h-screen px-5 flex justify-center items-center flex-col">
           {/* title  */}
           <div className="w-full mb-[2rem] flex justify-between  items-center text-nowrap">
           <span className="md:text-center  text-start w-full text-2xl md:text-5xl uppercase font-semibold  trackong-wider">
               Our upcoming trekking
             </span>
-            {/* <button className="bg-white h-[2.8rem] text-sm font-medium rounded-full w-[8rem] hover:bg-black border-2 text-black hover:text-zinc-50 hover:border-white border-black duration-200">
+            {/* <button className="bg-white h-[2.8rem] text-sm font-medium rounded-full w-[8rem] hover:bg-zinc-950 border-2 text-black hover:text-zinc-50 hover:border-white border-black duration-200">
               View all
             </button> */}
           </div>
@@ -68,7 +68,7 @@ function Upcoming({}: Props) {
                 key={index}
                 className="h-full mt-[-3rem]   flex justify-start items-start"
               >
-                <CardContainer className=" h-full flex justify-start items-center rounded-xl cursor-pointer">
+                <CardContainer className=" h-full py-20 flex justify-start items-center rounded-xl cursor-pointer">
                   <Link href="/product_detail">
                     <CardBody className="flex w-full h-[30rem] flex-col gap-2">
                       <CardItem

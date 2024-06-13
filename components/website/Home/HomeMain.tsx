@@ -10,7 +10,9 @@ import Footer from "../Footer";
 import HeroIntro from "./HeroIntro";
 import Navbar from "../Navbar";
 import About from "./About";
-
+import gsap from "gsap";
+import Lenis from "lenis";
+import SwipeHero from "./SwipeHero";
 type Props = {};
 
 function HomeMain({ openContainerRef, handleWheel }: any) {
@@ -20,45 +22,35 @@ function HomeMain({ openContainerRef, handleWheel }: any) {
   //     const locomotiveScroll = new LocomotiveScroll();
   //   })();
   // }, []);
+  // useEffect(() => {
+  //   const lenis = new Lenis();
+  //   function raf(time) {
+  //     lenis.raf(time);
+  //     requestAnimationFrame(raf);
+  //   }
+  //   requestAnimationFrame(raf);
+  // }, []);
   return (
     <div
       ref={openContainerRef}
       onWheel={handleWheel}
-      className="w-full fixed  hidden top-[100%]  h-full overflow-y-auto  scroll-section  bg-white z-[50]"
+      className="w-full relative top-[100%] left-0 h-full scroll-section   bg-white z-[50]"
     >
-
-      <div className="w-full h-full relative">
-        <div className=" w-full bg-black ">
-          {/* <HeroIntro /> */}
-          <About />
-        </div>
-        <div className="">
-          <Service />
-        </div>
-        <PopularTrek />
-        <Upcoming />
-        <Affiliations />
-        <ParallaxTestimonial />
-        <Contact />
-        <Footer />
-
-        {/* <Footer /> */}
+      <SwipeHero />
+      <div className=" w-full bg-zinc-950 ">
+        {/* <HeroIntro /> */}
+        <About />
       </div>
+      <div className="">
+        <Service />
+      </div>
+      <PopularTrek />
+      <Upcoming />
+      <Affiliations />
+      <ParallaxTestimonial />
+      <Contact />
     </div>
   );
 }
 
 export default HomeMain;
-
-
-// import React from 'react'
-
-// type Props = {}
-
-// function HomeMain({}: Props) {
-//   return (
-//     <div>HomeMain</div>
-//   )
-// }
-
-// export default HomeMain

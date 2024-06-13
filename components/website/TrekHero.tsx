@@ -56,7 +56,7 @@
 //                 {/* // main div */}
 //                 <div
 //                     ref={mainContainerRef}
-//                     className="w-full relative  text-nowrap  overflow-x-hidden bg-black text-zinc-50 h-[400vh]"
+//                     className="w-full relative  text-nowrap  overflow-x-hidden bg-zinc-950 text-zinc-50 h-[400vh]"
 //                 >
 //                     {/* pin */}
 //                     <div ref={pinContainerRef} className="w-[400vw] h-screen flex">

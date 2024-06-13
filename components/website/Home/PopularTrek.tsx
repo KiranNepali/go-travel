@@ -22,14 +22,14 @@ type Props = {};
 function PopularTrek({ }: Props) {
   return (
     <>
-      <div className="w-full text-zinc-50 h-full bg-black">
+      <div className="w-full text-zinc-50 h-full bg-zinc-950">
         <div className="w-11/12   mx-auto overflow-hidden h-screen px-5 flex justify-center items-center flex-col">
           {/* title  */}
           <div className="w-full mb-[2rem]  flex justify-between  items-start text-nowrap">
             <span className=" text-zinc-50 w-full text-center  text-2xl md:text-5xl uppercase font-semibold trackong-wider">
               Our most popular trekking
             </span>
-            {/* <button className="bg-white h-[2.8rem] text-sm font-medium rounded-full w-[8rem] hover:bg-black border-2 text-black hover:text-zinc-50 hover:border-white border-black duration-200">
+            {/* <button className="bg-white h-[2.8rem] text-sm font-medium rounded-full w-[8rem] hover:bg-zinc-950 border-2 text-black hover:text-zinc-50 hover:border-white border-black duration-200">
               View all
             </button> */}
           </div>
@@ -66,10 +66,10 @@ function PopularTrek({ }: Props) {
             {PopularTrekData.map((item, index) => (
               <SwiperSlide
                 key={index}
-                className="h-full mt-[-3rem]   flex justify-start items-start"
+                className="h-full mt-[-3rem] overflow-hidden flex justify-start items-start"
               >
-                <CardContainer className=" h-full flex justify-start items-center rounded-xl cursor-pointer">
-                  <Link href="/product_detail">
+                <CardContainer className="h-full py-20 w-full flex justify-start items-center rounded-xl cursor-pointer">
+                  <Link href="/product_detail" className="w-full">
                     <CardBody className="flex w-full h-[30rem] flex-col gap-2">
                       <CardItem
                         translateZ="100"
@@ -84,9 +84,9 @@ function PopularTrek({ }: Props) {
                         ></Image>
                       </CardItem>
 
-                      <div className="flex gap-2 w-full">
+                      <div className="flex gap-2 justify-between w-full">
                         {/* desc  */}
-                        <div className="flex flex-col gap-1">
+                        <div className="flex flex-col justify-between gap-1">
                           <span className="font-semibold text-nowrap text-zinc-50 text-sm">
                             {item.name}
                           </span>
@@ -106,10 +106,22 @@ function PopularTrek({ }: Props) {
                             <Icon icon="material-symbols:star" />
                           </div>
                         </div>
-                        {/* price  */}
-                        <span className="w-full text-end text-[12px] font-semibold text-zinc-500  justify-center  items-end">
-                          {item.price}
-                        </span>
+                        <div className="flex justify-between flex-col">
+                          {/* price  */}
+                          <span className="w-full text-end text-[12px] font-semibold text-zinc-500  justify-center  items-end">
+                            {item.price}
+                          </span>
+
+                          {/* <div className="flex gap-1 justify-end">
+                            <button type="submit" className="bg-zinc-300 text-[12px] font-medium rounded-full px-4 hover:bg-white border-2 py-2 text-zinc-900  hover:border-white border-black duration-300">
+                              View details
+                            </button>
+                            <button type="submit" className="bg-zinc-300 text-[12px] font-medium rounded-full px-4 hover:bg-white border-2 py-2 text-zinc-900  hover:border-white border-black duration-300">
+                              Book now
+                            </button>
+                          </div> */}
+
+                        </div>
                       </div>
                     </CardBody>
                   </Link>

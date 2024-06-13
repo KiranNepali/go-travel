@@ -135,9 +135,9 @@ function Service({}: Props) {
     <>
       <div
         ref={imgContainerRef}
-        className="w-full relative overflow-hidden bg-black lg:h-[100vh]"
+        className="w-full relative overflow-hidden bg-zinc-950 lg:h-[100vh]"
       >
-        <div className="mask-black absolute bottom-0 left-0 w-full h-full bg-black opacity-[0.8] z-10"></div>
+        <div className="mask-black absolute bottom-0 left-0 w-full h-full bg-zinc-950 opacity-[0.8] z-10"></div>
 
         <div className="mask1 absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-t from-black  to-transparent z-10"></div>
         <div className="mask2 absolute top-0 left-0 w-full h-[50%] bg-gradient-to-b from-black  to-transparent z-10"></div>

@@ -42,8 +42,8 @@ export default function Hero({ }: Props) {
         ".slide1",
         {
           x: "-100%",
-          duration: 1,
-          ease: "expo.Out",
+          duration: 0.7,
+          ease: "expo.inOut",
         },
         ".slide1"
       );
@@ -51,8 +51,8 @@ export default function Hero({ }: Props) {
         ".slide2",
         {
           x: "-100%",
-          duration: 1,
-          ease: "expo.Out",
+          duration: 0.7,
+          ease: "expo.inOut",
         },
         ".slide1"
       );
@@ -60,8 +60,8 @@ export default function Hero({ }: Props) {
         ".slide3",
         {
           x: "-100%",
-          duration: 1,
-          ease: "expo.Out",
+          duration: 0.7,
+          ease: "expo.inOut",
         },
         ".slide1"
       );
@@ -69,8 +69,8 @@ export default function Hero({ }: Props) {
         ".slide4",
         {
           x: "-100%",
-          duration: 1,
-          ease: "expo.Out",
+          duration: 0.7,
+          ease: "expo.inOut",
         },
         ".slide1"
       );
@@ -84,7 +84,7 @@ export default function Hero({ }: Props) {
       });
       gsap.to(".slide1Text", {
         opacity: 0,
-        duration: 0.3,
+        duration: 0.8,
         top: "60%",
         ease: "power4.inOut",
       });
@@ -97,24 +97,24 @@ export default function Hero({ }: Props) {
     if (delta > 0) {
       gsap.to(".slide1", {
         x: "-200%",
-        duration: 1,
-        ease: "expo.Out",
+        duration: 0.7,
+        ease: "expo.inOut",
       });
       gsap.to(".slide2", {
         x: "-200%",
-        duration: 1,
-        ease: "expo.Out",
+        duration: 0.7,
+        ease: "expo.inOut",
       });
       gsap.to(".slide3", {
         x: "-200%",
-        duration: 1,
-        ease: "expo.Out",
+        duration: 0.7,
+        ease: "expo.inOut",
       });
 
       gsap.to(".slide4", {
         x: "-200%",
-        duration: 1,
-        ease: "expo.Out",
+        duration: 0.7,
+        ease: "expo.inOut",
       });
 
       // text animation
@@ -134,7 +134,7 @@ export default function Hero({ }: Props) {
       });
       gsap.to(".slide2Text", {
         opacity: 0,
-        duration: 0.3,
+        duration: 0.8,
         top: "60%",
         ease: "power4.inOut",
       });
@@ -143,23 +143,23 @@ export default function Hero({ }: Props) {
     if (delta < 0) {
       gsap.to(".slide1", {
         x: "0",
-        duration: 1,
-        ease: "expo.Out",
+        duration: 0.7,
+        ease: "expo.inOut",
       });
       gsap.to(".slide2", {
         x: "0",
-        duration: 1,
-        ease: "expo.Out",
+        duration: 0.7,
+        ease: "expo.inOut",
       });
       gsap.to(".slide3", {
         x: "0",
-        duration: 1,
-        ease: "expo.Out",
+        duration: 0.7,
+        ease: "expo.inOut",
       });
       gsap.to(".slide4", {
         x: "0",
-        duration: 1,
-        ease: "expo.Out",
+        duration: 0.7,
+        ease: "expo.inOut",
       });
 
       // text animation
@@ -171,7 +171,7 @@ export default function Hero({ }: Props) {
       });
       gsap.to(".slide2Text", {
         opacity: 0,
-        duration: 0.3,
+        duration: 0.8,
         top: "60%",
         ease: "power4.inOut",
       });
@@ -185,23 +185,23 @@ export default function Hero({ }: Props) {
     if (delta > 0) {
       gsap.to(".slide1", {
         x: "-300%",
-        duration: 1,
-        ease: "expo.Out",
+        duration: 0.7,
+        ease: "expo.inOut",
       });
       gsap.to(".slide2", {
         x: "-300%",
-        duration: 1,
-        ease: "expo.Out",
+        duration: 0.7,
+        ease: "expo.inOut",
       });
       gsap.to(".slide3", {
         x: "-300%",
-        duration: 1,
-        ease: "expo.Out",
+        duration: 0.7,
+        ease: "expo.inOut",
       });
       gsap.to(".slide4", {
         x: "-300%",
-        duration: 1,
-        ease: "expo.Out",
+        duration: 0.7,
+        ease: "expo.inOut",
       });
 
       // text animation
@@ -213,7 +213,7 @@ export default function Hero({ }: Props) {
       });
       gsap.to(".slide3Text", {
         opacity: 0,
-        duration: 0.3,
+        duration: 0.8,
         top: "60%",
         ease: "power4.inOut",
       });
@@ -223,28 +223,28 @@ export default function Hero({ }: Props) {
     if (delta < 0) {
       gsap.to(".slide1", {
         x: "-100%",
-        duration: 1,
-        ease: "expo.Out",
+        duration: 0.7,
+        ease: "expo.inOut",
       });
       gsap.to(".slide2", {
         x: "-100%",
-        duration: 1,
-        ease: "expo.Out",
+        duration: 0.7,
+        ease: "expo.inOut",
       });
       gsap.to(".slide3", {
         x: "-100%",
-        duration: 1,
-        ease: "expo.Out",
+        duration: 0.7,
+        ease: "expo.inOut",
       });
       gsap.to(".slide4", {
         x: "-100%",
-        duration: 1,
-        ease: "expo.Out",
+        duration: 0.7,
+        ease: "expo.inOut",
       });
       // text animation
       gsap.to(".slide3Text", {
         opacity: 0,
-        duration: 0.3,
+        duration: 0.8,
         top: "60%",
         ease: "power4.inOut",
       });
@@ -265,9 +265,10 @@ export default function Hero({ }: Props) {
       tl.to(openContainerRef.current, {
         // height: "auto",
         pointerEvents: "none",
-        top: 0,
+        y: "-100vh",
+        // marginTop: "-100vh",
         display: "block",
-        duration: 1,
+        duration: 0.8,
         ease: "expo.inOut",
       }, "sam");
       tl.to(".slide4", {
@@ -281,7 +282,7 @@ export default function Hero({ }: Props) {
       // gsap.to(".start-button", {
       //   opacity: 0,
       //   display: "none",
-      //   duration: 0.3,
+      //   duration: 0.8,
       //   ease: "power4.inOut",
       // });
     }
@@ -290,28 +291,28 @@ export default function Hero({ }: Props) {
     if (delta < 0) {
       gsap.to(".slide1", {
         x: "-200%",
-        duration: 1,
-        ease: "expo.Out",
+        duration: 0.7,
+        ease: "expo.inOut",
       });
       gsap.to(".slide2", {
         x: "-200%",
-        duration: 1,
-        ease: "expo.Out",
+        duration: 0.7,
+        ease: "expo.inOut",
       });
       gsap.to(".slide3", {
         x: "-200%",
-        duration: 1,
-        ease: "expo.Out",
+        duration: 0.7,
+        ease: "expo.inOut",
       });
       gsap.to(".slide4", {
         x: "-200%",
-        duration: 1,
-        ease: "expo.Out",
+        duration: 0.7,
+        ease: "expo.inOut",
       });
       //  text animation
       gsap.to(".slide4Text", {
         opacity: 0,
-        duration: 0.3,
+        duration: 0.8,
         top: "60%",
         ease: "power4.inOut",
       });
@@ -350,13 +351,14 @@ export default function Hero({ }: Props) {
   };
 
   const handleAnimation = () => {
-    console.log("Animation function executed");
     const tl = gsap.timeline();
     tl.to(openContainerRef.current, {
-      top: "100%",
-      display: "none",
+      // top: "100%",
+      // y: 0,
+      // marginTop: "0",
+      // display: "none",
       duration: 0.8,
-      ease: "power3.out",
+      ease: "expo.inOut",
     }, "sam");
     tl.to(".slide4", {
       pointerEvents: "none",
@@ -371,17 +373,17 @@ export default function Hero({ }: Props) {
       {/*main div */}
       <div
         ref={mainContainerRef}
-        className="w-full relative flex   text-nowrap  overflow-x-hidden bg-black text-zinc-100 h-screen"
+        className="w-full relative flex flex-col text-nowrap scroll-section  overflow-x-hidden bg-zinc-950 text-zinc-100"
       >
-        <div className=" hero-person absolute w-[20rem] md:w-[23rem] pointer-events-none bottom-0 z-[30] left-[50%] -translate-x-[50%]">
+        {/* pin */}
+        <div className="w-full relative overflow-hidden h-screen flex">
+        <div className="hero-person absolute w-[20rem] md:w-[23rem] pointer-events-none bottom-0 z-[30] left-[50%] -translate-x-[50%]">
           <Image
             src={HeroPersonImage}
             className="object-cover object-center w-full"
             alt="hero-person"
           ></Image>
         </div>
-        {/* pin */}
-        <div className="w-full relative overflow-hidden h-screen flex">
           {/* slide 1  */}
           <div
             onWheel={handleScroll1}
@@ -396,7 +398,7 @@ export default function Hero({ }: Props) {
                 alt="everest-image"
                 className="w-full h-full object-cover object-center"
               ></Image>
-              <div className="absolute top-0 left-0 w-full h-screen bg-black opacity-[0.3] z-[30]"></div>
+              <div className="absolute top-0 left-0 w-full h-screen bg-zinc-950 opacity-[0.3] z-[30]"></div>
             </div>
           </div>
 
@@ -416,7 +418,7 @@ export default function Hero({ }: Props) {
                 alt="everest-image"
                 className="w-full h-full object-cover object-center"
               ></Image>
-              <div className="absolute top-0 left-0 w-full h-screen bg-black opacity-[0.3] z-[30]"></div>
+              <div className="absolute top-0 left-0 w-full h-screen bg-zinc-950 opacity-[0.3] z-[30]"></div>
 
             </div>
           </div>
@@ -435,7 +437,7 @@ export default function Hero({ }: Props) {
                 alt="everest-image"
                 className="w-full h-full object-cover object-center"
               ></Image>
-              <div className="absolute top-0 left-0 w-full h-screen bg-black opacity-[0.3] z-[30]"></div>
+              <div className="absolute top-0 left-0 w-full h-screen bg-zinc-950 opacity-[0.3] z-[30]"></div>
 
             </div>
           </div>
@@ -454,7 +456,7 @@ export default function Hero({ }: Props) {
                 alt="everest-image"
                 className="w-full h-full object-cover object-center"
               ></Image>
-              <div className="absolute top-0 left-0 w-full h-screen bg-black opacity-[0.3] z-[30]"></div>
+              <div className="absolute top-0 left-0 w-full h-screen bg-zinc-950 opacity-[0.3] z-[30]"></div>
             </div>
           </div>
         </div>

@@ -48,7 +48,7 @@ function TrekDetailMain({ }: Props) {
 
   return (
     <>
-      <div className="w-full h-full bg-black text-zinc-50">
+      <div className="w-full h-full bg-zinc-950 text-zinc-50">
         {/* TOP IMAGE  */}
         <div className="w-full text-zinc-50 h-[40vh] relative">
           <div className="w-full z-0 absolute h-full overflow-hidden">
@@ -57,7 +57,7 @@ function TrekDetailMain({ }: Props) {
               alt="hero-background-image"
               className="w-full h-full object-cover object-center"
             ></img>
-            <div className="absolute top-0 left-0 opacity-[0.3]  w-full h-full bg-black z-10"></div>
+            <div className="absolute top-0 left-0 opacity-[0.3]  w-full h-full bg-zinc-950 z-10"></div>
           </div>
           <div className="absolute bottom-0 left-0 w-full h-[10rem] bg-gradient-to-t from-black to-transparent"></div>
           <div className="absolute top-0 left-0 w-full h-[10rem] bg-gradient-to-b from-black to-transparent"></div>
@@ -80,18 +80,20 @@ function TrekDetailMain({ }: Props) {
           </div>
         </div>
 
-        <div className="py-[5rem] w-full overflow-hidden lg:w-11/12 flex flex-col gap-5 mx-auto">
+        <div className="py-[5rem] w-full  lg:w-11/12 flex flex-col gap-5 mx-auto">
           {/* tab  link  */}
-          <div className="mx-auto h-[5rem] w-11/12 overflow-x-scroll md:overflow-visible lg:w-8/12 flex justify-between font-medium items-center">
-            {buttonLabels.map((item) => (
-              <a
-                href={`#${item.label.replace(/\s+/g, '-').toLowerCase()}`}
-                key={item.id}
-                className={`cursor-pointer text-nowrap text-zinc-300  hover:text-zinc-50 duration-200 flex justify-center items-center rounded-3xl px-5 bg-zinc-900 h-[2.5rem] text-sm`}
-              >
-                {item.label}
-              </a>
-            ))}
+          <div className="mx-auto  w-full backdrop-blur-sm sticky top-[4rem] left-0 overflow-x-scroll md:overflow-visible lg:w-full flex justify-between font-medium items-center">
+            <div className="md:w-8/12 mx-auto h-[5rem] w-11/12 overflow-x-scroll md:overflow-visible flex justify-between font-medium items-center">
+              {buttonLabels.map((item) => (
+                <a
+                  href={`#${item.label.replace(/\s+/g, '-').toLowerCase()}`}
+                  key={item.id}
+                  className={`cursor-pointer text-nowrap text-zinc-300  hover:text-zinc-50 duration-200 flex justify-center items-center rounded-3xl px-5 bg-zinc-900 h-[2.5rem] text-sm`}
+                >
+                  {item.label}
+                </a>
+              ))}
+            </div>
           </div>
           {/* detail  */}
 

@@ -7,7 +7,7 @@ import Link from "next/link";
 
 type Props = {};
 
-function Navbar({ }: Props) {
+function Navbar({}: Props) {
   // for navbar animation
   const sideNavRef = useRef(null);
   const [openNav, setOpenNav] = useState(false);
@@ -109,14 +109,15 @@ function Navbar({ }: Props) {
     }
   };
 
-
-
   return (
     <div className="top-0 left-0 h-[4.5rem] text-zinc-50 flex justify-center items-center w-full backdrop-blur-sm fixed z-[3000]">
       {/* top  */}
       <div className=" bg-transparent  w-11/12 mx-auto   flex justify-between items-center">
         {/* logo  */}
-        <Link href="/" className="font-semibold text-sm w-[8.5rem] opacity-[0.9]  h-[2rem] cursor-pointer  overflow-hidden">
+        <Link
+          href="/"
+          className="font-semibold text-sm w-[8.5rem] opacity-[0.9]  h-[2rem] cursor-pointer  overflow-hidden"
+        >
           <Image
             src={LogoImage}
             alt="travel-logo"
@@ -125,17 +126,25 @@ function Navbar({ }: Props) {
         </Link>
 
         <div className="md:flex gap-10 hidden justify-center font-medium  items-center text-sm">
-          {["Home", "Services", "Treks", "Testimonials", "Contact"].map(
-            (item, index) => (
-              <a
-                href=""
-                key={index}
-                className="flex hover:scale-110 duration-300 hover:text-white justify-center items-center cursor-pointer  overflow-hidden"
-              >
-                <span className="">{item}</span>
-              </a>
-            )
-          )}
+          {["Home", "About us", "Treks", "Contact us"].map((item, index) => (
+            <Link
+              href={
+                item === "Home"
+                  ? "/"
+                  : item === "About us"
+                  ? "about_us"
+                  : item === "Treks"
+                  ? "all_trek"
+                  : item === "Contact us"
+                  ? "contact_us"
+                  : ""
+              }
+              key={index}
+              className="flex hover:scale-110 duration-300 hover:text-white justify-center items-center cursor-pointer  overflow-hidden"
+            >
+              <span className="">{item}</span>
+            </Link>
+          ))}
         </div>
         {/* ham  */}
         <div
@@ -150,7 +159,7 @@ function Navbar({ }: Props) {
       {/* side nav  */}
       <div
         ref={sideNavRef}
-        className="w-full h-screen justify-center items-center hidden  fixed top-0 right-[-100%] bg-black"
+        className="w-full h-screen justify-center items-center hidden  fixed top-0 right-[-100%] bg-zinc-950"
       >
         <div className="flex justify-center items-center   flex-col h-full w-full">
           <div className="flex flex-col md:flex-row justify-center h-full items-center gap-[4%] w-full text-3xl font-medium">

@@ -344,7 +344,7 @@
 //       {/*main div */}
 //       <div
 //         ref={mainContainerRef}
-//         className="w-full relative overflow-hidden  text-nowrap  overflow-x-hidden bg-black text-zinc-50 h-screen"
+//         className="w-full relative overflow-hidden  text-nowrap  overflow-x-hidden bg-zinc-950 text-zinc-50 h-screen"
 //       >
 //         <div className=" hero-person absolute w-[20rem] md:w-[23rem] pointer-events-none bottom-0 z-[30] left-[50%] -translate-x-[50%]">
 //           <Image

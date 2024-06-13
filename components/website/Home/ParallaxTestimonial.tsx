@@ -9,10 +9,10 @@ function ParallaxTestimonial({ testimonialRef }: any) {
   return (
     <div
       ref={testimonialRef}
-      className="flex flex-col justify-center items-center w-full pt-20 bg-black overflow-hidden "
+      className="flex flex-col justify-center items-center w-full pt-20 bg-zinc-950 overflow-hidden "
     >
       {/* title  */}
-      <span className="text-zinc-50 w-full text-start md:text-center text-2xl md:text-5xl uppercase font-semibold tracking-wider">
+      <span className="text-zinc-50 w-full text-start md:text-center text-2xl md:text-5xl uppercase font-semibold ">
         Testimonials
       </span>
 
@@ -40,12 +40,12 @@ function ParallaxTestimonial({ testimonialRef }: any) {
                       key={item.id}
                       className="flex flex-col  min-w-[300px] max-w-full h-fit  "
                     >
-                      <div className="four w-full flex flex-col gap-4 justify-between p-4 bg-gradient-to-tl  from-[#040404] to-gray-900 border border-gray-900 rounded-2xl h-full">
+                      <div className="four w-full flex flex-col gap-4 justify-between p-4 bg-gradient-to-tl  from-[#040404] to-zinc-900 border border-gray-900 rounded-2xl h-full">
                         <div className="flex flex-col gap-2 ">
                           <p className="text-sm text-wrap font-[300] font-sans  leading-5 text-gray-300">
                             {item.review}
-                            <span className="bg-clip-text text-transparent bg-gradient-to-t from-[#97efe9]  via-[#e34df4] to-[#6e5ce9]  font-bold">
-                              {item.hpart}
+                            <span className="bg-clip-text text-transparent bg-gradient-to-t from-[#97efe9] via-[#e34df4] to-[#6e5ce9]  font-bold">
+                              {/* {item.hpart} */}
                             </span>
                             {item.lpart}
                           </p>
@@ -113,13 +113,13 @@ function ParallaxTestimonial({ testimonialRef }: any) {
                       key={item.id}
                       className="flex flex-col  min-w-[250px] max-w-full h-fit  "
                     >
-                      <div className="four w-full flex flex-col gap-4 justify-between p-4 bg-gradient-to-tl  from-[#040404] to-gray-900 border border-gray-900 rounded-2xl h-full">
+                      <div className="four w-full flex flex-col gap-4 justify-between p-4 bg-gradient-to-tl  from-[#040404] to-zinc-900 border border-gray-900 rounded-2xl h-full">
                         {" "}
                         <div className="flex flex-col gap-2 ">
                           <p className="text-sm text-wrap font-[300] font-sans  leading-5 text-gray-300">
                             {item.review}
                             <span className="  bg-clip-text text-transparent bg-gradient-to-t from-[#97efe9]  via-[#e34df4] to-[#6e5ce9]  font-bold">
-                              {item.hpart}
+                              {/* {item.hpart} */}
                             </span>
                             {item.lpart}
                           </p>
@@ -187,13 +187,13 @@ function ParallaxTestimonial({ testimonialRef }: any) {
                       key={item.id}
                       className="flex flex-col  min-w-[250px] max-w-full h-fit  "
                     >
-                      <div className="four w-full flex flex-col gap-4 justify-between p-4 bg-gradient-to-tl  from-[#040404] to-gray-900 border border-gray-900 rounded-2xl h-full">
+                      <div className="four w-full flex flex-col gap-4 justify-between p-4 bg-gradient-to-tl  from-[#040404] to-zinc-900 border border-gray-900 rounded-2xl h-full">
                         {" "}
                         <div className="flex flex-col gap-2 ">
                           <p className="text-sm text-wrap font-[300] font-sans  leading-5 text-gray-300">
                             {item.review}
                             <span className="  bg-clip-text text-transparent bg-gradient-to-t from-[#97efe9]  via-[#e34df4] to-[#6e5ce9]  font-bold">
-                              {item.hpart}
+                              {/* {item.hpart} */}
                             </span>
                             {item.lpart}
                           </p>
@@ -261,13 +261,13 @@ function ParallaxTestimonial({ testimonialRef }: any) {
                       key={item.id}
                       className="flex flex-col  min-w-[250px] max-w-full h-fit  "
                     >
-                      <div className="four w-full flex flex-col gap-4 justify-between p-4 bg-gradient-to-tl  from-[#040404] to-gray-900 border border-gray-900 rounded-2xl h-full">
+                      <div className="four w-full flex flex-col gap-4 justify-between p-4 bg-gradient-to-tl  from-[#040404] to-zinc-900 border border-gray-900 rounded-2xl h-full">
                         {" "}
                         <div className="flex flex-col gap-2 ">
                           <p className="text-sm text-wrap font-[300] font-sans  leading-5 text-gray-300">
                             {item.review}
                             <span className="  bg-clip-text text-transparent bg-gradient-to-t from-[#97efe9]  via-[#e34df4] to-[#6e5ce9]  font-bold">
-                              {item.hpart}
+                              {/* {item.hpart} */}
                             </span>
                             {item.lpart}
                           </p>

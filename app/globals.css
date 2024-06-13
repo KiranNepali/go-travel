@@ -14,16 +14,37 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.font{
+
+.font {
   /* font-family: "Italiana", sans-serif; */
   font-weight: 300;
   letter-spacing: normal;
- 
+
 }
 
 
-.scroll-section::-webkit-scrollbar{
+.scroll-section::-webkit-scrollbar {
   display: none;
 }
 
 
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}

@@ -7,8 +7,8 @@ type Props = {};
 function HeroIntro({ }: Props) {
   return (
     <div className="w-full text-zinc-50 h-screen relative">
-      <div className="absolute top-0 left-0 opacity-[0.7] w-full h-full bg-black z-10"></div>
-      <div className="w-full z-0 absolute h-full overflow-hidden">
+      <div className="absolutey-[0.7] w-full h-full bg-zinc-950 z-10"></div>
+      <div className="w-full z-0 absolute h-full  top-0 left-0 opacitoverflow-hidden">
         <img
           src="https://wallpaperaccess.com/full/7285.jpg"
           alt="hero-background-image"
@@ -19,25 +19,25 @@ function HeroIntro({ }: Props) {
         <div className="w-full items-center  flex flex-col text-[5rem] leading-[6rem]">
           <div className="flex items-center ">
             <span>Experience</span>
-            <div className="bg-black rounded-full w-[10rem] h-[55px] mx-5 mt-2 overflow-hidden relative">
+            <div className="bg-zinc-950 rounded-full w-[10rem] h-[55px] mx-5 mt-2 overflow-hidden relative">
               <img
                 src="https://i.pinimg.com/564x/fd/af/f8/fdaff852118a200020cbd2fd0575fa3a.jpg"
                 className="absolute top-0 left-0 object-cover object-center"
                 alt=""
               />
-              <div className="absolute top-0 left-0 w-full h-full opacity-[0.4] bg-black"></div>
+              <div className="absolute top-0 left-0 w-full h-full opacity-[0.4] bg-zinc-950"></div>
             </div>
             <span>the beauty of</span>
           </div>
           <div className="flex items-center">
             <span>nature with</span>
-            <div className="bg-black rounded-full w-[10rem] h-[55px] mx-5 mt-2 overflow-hidden relative">
+            <div className="bg-zinc-950 rounded-full w-[10rem] h-[55px] mx-5 mt-2 overflow-hidden relative">
               <img
                 src="https://i.pinimg.com/564x/4b/76/cb/4b76cb130e193c6b38b5f6d626850013.jpg"
                 className="absolute top-0 left-0 object-cover object-center"
                 alt=""
               />
-              <div className="absolute top-0 left-0 w-full h-full opacity-[0.4] bg-black"></div>
+              <div className="absolute top-0 left-0 w-full h-full opacity-[0.4] bg-zinc-950"></div>
             </div>
             <span>us</span>
           </div>
