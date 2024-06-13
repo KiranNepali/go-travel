@@ -16,12 +16,7 @@ import SwipeHero from "./SwipeHero";
 type Props = {};
 
 function HomeMain({ openContainerRef, handleWheel }: any) {
-  // useEffect(() => {
-  //   (async () => {
-  //     const LocomotiveScroll = (await import("locomotive-scroll")).default;
-  //     const locomotiveScroll = new LocomotiveScroll();
-  //   })();
-  // }, []);
+  
   // useEffect(() => {
   //   const lenis = new Lenis();
   //   function raf(time) {
