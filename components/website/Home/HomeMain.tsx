@@ -28,7 +28,6 @@ function HomeMain({ openContainerRef, handleWheel }: any) {
       });
 
       setlocoforbuild(locomotiveScroll);
-      // console.log(locomotiveScroll);
       if (locoforbuild) {
         console.log("for build");
       }
