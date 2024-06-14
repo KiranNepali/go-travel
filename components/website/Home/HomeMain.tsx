@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Hero from "../Hero";
 import PopularTrek from "./PopularTrek";
 import Service from "./Service";
@@ -11,20 +11,30 @@ import HeroIntro from "./HeroIntro";
 import Navbar from "../Navbar";
 import About from "./About";
 import gsap from "gsap";
-// import Lenis from "lenis";
 import SwipeHero from "./SwipeHero";
 type Props = {};
 
 function HomeMain({ openContainerRef, handleWheel }: any) {
-  
-  // useEffect(() => {
-  //   const lenis = new Lenis();
-  //   function raf(time) {
-  //     lenis.raf(time);
-  //     requestAnimationFrame(raf);
-  //   }
-  //   requestAnimationFrame(raf);
-  // }, []);
+  const [locoforbuild, setlocoforbuild] = useState<any>(null);
+  useEffect(() => {
+    let locomotiveScroll;
+
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+
+      locomotiveScroll = new LocomotiveScroll({
+        el: document.querySelector("#ScrollElementId"), // Specify your scroll container element
+        smooth: true,
+      });
+
+      setlocoforbuild(locomotiveScroll);
+      // console.log(locomotiveScroll);
+      if (locoforbuild) {
+        console.log("for build");
+      }
+    })();
+  }, []);
+
   return (
     <div
       ref={openContainerRef}

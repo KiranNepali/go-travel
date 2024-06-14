@@ -22,12 +22,12 @@ function About() {
         scrub: 2,
       },
     });
-    tl.from(text.lines, {
-      opacity: 0,
-      y: "100px",
-      ease: "back.out",
-      stagger: 0.5,
-    });
+    // tl.from(text.lines, {
+    //   opacity: 0,
+    //   y: "100px",
+    //   ease: "back.out",
+    //   stagger: 0.5,
+    // });
   });
   return (
     <div>
