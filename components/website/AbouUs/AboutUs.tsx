@@ -8,7 +8,7 @@ function AboutUs({ }: Props) {
     return (
         <>
             <div className='w-8/12 mx-auto text-zinc-50 py-[5rem] flex gap-5 justify-center text-center items-center'>
-                <div className='w-full h-[50vh]'>
+                <div className='w-full h-[50vh] rounded-3xl overflow-hidden'>
                     <Image
                         width={1000}
                         height={1000}

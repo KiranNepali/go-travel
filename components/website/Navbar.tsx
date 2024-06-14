@@ -104,7 +104,6 @@ function Navbar({}: Props) {
         duration: 0.7,
         ease: "power4.inOut",
       });
-
       setOpenNav(false);
     }
   };
@@ -125,16 +124,27 @@ function Navbar({}: Props) {
           ></Image>
         </Link>
 
-        <div className="md:flex gap-10 hidden justify-center font-medium  items-center text-sm">
-          {["Home", "About us", "Treks", "Contact us"].map((item, index) => (
+        <div className="md:flex gap-10 hidden justify-center font-medium  items-center text-[15px]">
+          {[
+            "Home",
+            "About us",
+            "Trekking",
+            "Hiking",
+            "Other activities",
+            "Contact us",
+          ].map((item, index) => (
             <Link
               href={
                 item === "Home"
                   ? "/"
                   : item === "About us"
                   ? "about_us"
-                  : item === "Treks"
-                  ? "all_trek"
+                  : item === "Trekking"
+                  ? "all_treks"
+                  : item === "Hiking"
+                  ? "all_hikes"
+                  : item === "Other activities"
+                  ? "other_activities"
                   : item === "Contact us"
                   ? "contact_us"
                   : ""

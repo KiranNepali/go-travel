@@ -1,33 +1,33 @@
 import React from "react";
-import AllTrekCard from "./AllTrekCard";
+import AllTrekCard from "./AllHikeCard";
 import Image from "next/image";
 
 type Props = {};
 
-function AllTrekMain({}: Props) {
+function AllHikeMain({}: Props) {
   return (
     <div className="w-full pb-10">
       {/* TOP IMAGE  */}
-      <div className="w-full text-zinc-50 h-[50vh] flex justify-center items-center relative">
+      <div className="w-full text-zinc-50 h-[50vh] relative flex justify-center items-center">
         <div className="w-full z-0 absolute h-full overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1690842855840-0b56f4b2a208?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://images.unsplash.com/photo-1578592391689-0e3d1a1b52b9?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="hero-background-image"
-            className="w-full h-full object-cover object-bottom"
+            className="w-full h-full object-cover object-center"
           ></img>
           <div className="absolute top-0 left-0 opacity-[0.5]  w-full h-full bg-zinc-950 z-10"></div>
         </div>
         <div className="absolute bottom-0 left-0 w-full h-[10rem] bg-gradient-to-t from-black to-transparent"></div>
         <div className="absolute top-0 left-0 w-full h-[10rem] bg-gradient-to-b from-black to-transparent"></div>
-        <h1 className="w-full relative text-center mb-[2rem] text-2xl md:text-5xl uppercase font-bold">
-          Discover epic treks{" "}
+        <h1 className="w-full text-center mb-[2rem]  text-2xl md:text-4xl uppercase font-semibold">
+          Discover epic Hikes{" "}
         </h1>
       </div>
 
       {/* NAVIGATION  activities */}
       <div className="w-10/12 mx-auto py-10 flex justify-center">
         <div className="w-full flex gap-5 justify-center items-center flex-wrap mx-auto">
-          {FilterSeasonTrek.map((item) => (
+          {FilterSeasonHike.map((item) => (
             <div
               key={item.id}
               className="w-[10rem] rounded-full cursor-pointer group relative overflow-hidden flex justify-center items-center h-[7vh] bg-slate-300"
@@ -50,16 +50,15 @@ function AllTrekMain({}: Props) {
           ))}
         </div>
       </div>
-
       {/* CARDS  */}
       <AllTrekCard />
     </div>
   );
 }
 
-export default AllTrekMain;
+export default AllHikeMain;
 
-const FilterSeasonTrek = [
+const FilterSeasonHike = [
   {
     id: 1,
     name: "Spring Paragliding",

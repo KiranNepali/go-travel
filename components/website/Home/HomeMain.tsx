@@ -1,16 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Hero from "../Hero";
 import PopularTrek from "./PopularTrek";
 import Service from "./Service";
 import Upcoming from "./Upcoming";
 import Affiliations from "./Affiliation";
 import ParallaxTestimonial from "./ParallaxTestimonial";
 import Contact from "./Contact";
-import Footer from "../Footer";
-import HeroIntro from "./HeroIntro";
-import Navbar from "../Navbar";
 import About from "./About";
-import gsap from "gsap";
 import SwipeHero from "./SwipeHero";
 type Props = {};
 

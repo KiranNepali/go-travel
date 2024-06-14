@@ -17,6 +17,7 @@ import HeroPhoksundoBg from "@/public/HeroImage/HeroPhoksundo.png";
 import HeroEverestBg from "@/public/HeroImage/HeroEverest.png";
 import HeroTilichoBg from "@/public/HeroImage/HeroTilicho.png";
 import HeroPersonImage from "@/public/HeroImage/HeroPerson.png";
+import Link from "next/link";
 
 export default function SwipeHero() {
   const images = [
@@ -43,7 +44,7 @@ export default function SwipeHero() {
   //     });
   //   }, []);
   return (
-    <div className="w-full h-screen relative">
+    <div className="w-full h-screen relative text-zinc-50">
       <Swiper
         autoplay={{
           delay: 2000,
@@ -70,8 +71,8 @@ export default function SwipeHero() {
               />
               <div className="absolute top-0 left-0 w-full h-full opacity-[0.3] bg-zinc-950"></div>
             </div>
-            <div className="absolute text-zinc-50 top-[30%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-              <span className="text-8xl tracking-wide uppercase font-black">
+            <div className="absolute text-zinc-200 top-[30%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+              <span className="text-[10vw] inline-block  uppercase font-black">
                 {image.name}
               </span>
             </div>
@@ -88,7 +89,7 @@ export default function SwipeHero() {
         />
       </div>
 
-      <div className="flex w-full bottom-20 left-0  absolute z-40 justify-end items-center ">
+      <div className="flex w-full bottom-20 left-0  absolute z-50 justify-end items-center ">
         <div className="w-11/12 justify-end mx-auto flex gap-5">
           <div
             onClick={() => {
@@ -96,11 +97,10 @@ export default function SwipeHero() {
                 swiperRef.current.slidePrev();
               }
             }}
-            className="w-[2rem] md:w-[2.5rem] h-[2rem] md:h-[2.5rem] hover:scale-105 duration-300 cursor-pointer overflow-hidden  border-zinc-300 rounded-full"
+            className="w-[2rem] md:w-[2.5rem] h-[2rem] md:h-[2.5rem] hover:scale-105 duration-300 cursor-pointer overflow-hidden  text-zinc-300 hover:text-zinc-50 rounded-full"
           >
             <Icon
-              icon="solar:round-arrow-left-bold"
-              style={{ color: "white" }}
+              icon="mynaui:fat-arrow-left"
               className="w-full h-full object-cover object-center"
             />
           </div>
@@ -110,14 +110,32 @@ export default function SwipeHero() {
                 swiperRef.current.slideNext();
               }
             }}
-            className="w-[2rem] md:w-[2.5rem] h-[2rem] md:h-[2.5rem] hover:scale-105 duration-300 cursor-pointer rotate-[180deg] overflow-hidden  border-zinc-300 rounded-full"
+            className="w-[2rem] md:w-[2.5rem] h-[2rem] md:h-[2.5rem] hover:scale-105 duration-300 cursor-pointer  overflow-hidden  text-zinc-300 hover:text-zinc-50 rounded-full"
           >
-            <Icon
-              icon="solar:round-arrow-left-bold"
-              style={{ color: "white" }}
+             <Icon
+              icon="mynaui:fat-arrow-right"
               className="w-full h-full object-cover object-center"
             />
           </div>
+        </div>
+      </div>
+
+      <div className="flex w-full bottom-20 left-0  absolute z-40 justify-start items-center ">
+        <div className="w-11/12 flex-col justify-center items-start mx-auto flex gap-4">
+          <Link
+            href="contact_us"
+            className="bg-zinc-300 mt-3 hover:gap-3 flex justify-center items-center gap-1 h-[2.8rem] text-sm font-medium rounded-full w-[8rem] hover:bg-white hover:scale-105  text-black  hover:border-white border-black duration-300"
+          >
+            <span>Explore now</span>
+            <Icon
+              icon="mdi:arrow-right"
+              className="w-[1rem] pt-[1px] h-[1rem]"
+            />
+          </Link>
+          <p className="w-[30%] text-zinc-400">
+            "Embark on unforgettable adventures with our expertly curated gear
+            and guided treks. Discover your next epic journey today!"
+          </p>
         </div>
       </div>
     </div>

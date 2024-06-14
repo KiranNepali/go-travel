@@ -9,7 +9,6 @@ function page({}: Props) {
   return (
     <div>
       <TrekDetailMain />
-      <Footer />
     </div>
   );
 }
