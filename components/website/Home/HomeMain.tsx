@@ -11,7 +11,7 @@ import HeroIntro from "./HeroIntro";
 import Navbar from "../Navbar";
 import About from "./About";
 import gsap from "gsap";
-import Lenis from "lenis";
+// import Lenis from "lenis";
 import SwipeHero from "./SwipeHero";
 type Props = {};
 

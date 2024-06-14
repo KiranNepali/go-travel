@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
@@ -8,7 +9,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 function About() {
-  const text = new SplitType(".about-desc");
+  // const text = new SplitType(".about-desc");
   //   const splitDesc = text.lines;
   const aboutContainerRef = useRef(null);
   useGSAP(() => {

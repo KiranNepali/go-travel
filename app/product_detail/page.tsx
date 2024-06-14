@@ -1,3 +1,4 @@
+"use client"
 import Footer from "@/components/website/Footer";
 import TrekDetailMain from "@/components/website/TrekDetail/TrekDetailMain";
 import React from "react";

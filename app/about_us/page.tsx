@@ -1,3 +1,4 @@
+"use client"
 import AboutUs from "@/components/website/AbouUs/AboutUs";
 import React from "react";
 

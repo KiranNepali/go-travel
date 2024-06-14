@@ -1,3 +1,4 @@
+"use client"
 import AllTrekMain from "@/components/website/AllTrek/AllTrekMain";
 import React from "react";
 
